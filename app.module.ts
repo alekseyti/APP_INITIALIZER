@@ -9,6 +9,7 @@ import {Observable} from "rxjs";
 
 
 function initializeAppFactory(config: AppConfig): () => Observable<any> {
+  var url = window.location.origin + '/'
   return config.load(url)
  }
 
